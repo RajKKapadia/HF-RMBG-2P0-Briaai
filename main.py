@@ -21,7 +21,7 @@ transform_image = transforms.Compose([
     transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
 ])
 
-input_image_path = "test_3.jpg"
+input_image_path = "images/test_3.jpg"
 
 image = Image.open(input_image_path)
 input_images = transform_image(image).unsqueeze(0).to(device)
